@@ -1,0 +1,694 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #090605;
+    
+    
+}
+
+h1, h2, h3 {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+    
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+
+.wrapper {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "nav nav nav nav nav nav"
+    "main main main main main main"
+    "main main main main main main"
+    "box box box box box box"
+    "box box box box box box"
+    "footer footer footer footer footer footer";
+}
+
+.navigation {
+    
+    grid-area: nav;
+    display: flex;
+    width: 100vw;
+    padding: 1.5rem;
+    border: 5px solid #121113;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    height: 10rem;
+}
+
+.navigation_menu {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+    
+}
+
+
+
+.navigation_item {
+   
+    border-right: 1px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+.nav_logo {
+    width: 10rem;
+    margin-right: auto;
+    
+}
+
+
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+ 
+}
+
+.main_backgroundimg {
+    background-image: url(/img/08-night.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+.hotel_content {
+  align-self: center;
+  margin: 0;
+  
+  
+}
+
+.hotel_text {
+    font-size: 4rem;
+    letter-spacing: 5.9rem;
+    margin: 0;
+    margin-bottom: 2%;
+    margin-left: 42%;
+    
+    
+    
+   
+}
+
+.hotel_botton {
+    align-self: center;
+    min-width: 9vw;
+    height: 4rem;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    padding: 0.8em 1.2em 0.8em 1.05em;
+    margin: 0;
+    margin-left: 5.6%;
+    margin-bottom: 22%;
+
+    
+}
+
+.button__text {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-size: 1.1rem;
+    color: ghostwhite;
+    overflow: hidden;
+    text-decoration: none;
+    
+}
+
+
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+    padding: 5rem;
+    background-color: #090605;
+    
+}
+
+.footer_contact {
+    padding: 10px;
+}
+
+.footer_icons {
+    display: flex;
+    padding: 5%;
+    margin-left: 10%;
+     
+}
+
+.footer_icon {
+    
+    padding: 10px;
+    max-width: 50px;
+    
+    
+}
+
+.footer_bonzai {
+    background-image: url(/img/bonz.ai-logo-white-landscape.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-left: 10%;
+    
+}
+
+
+
+
+
+
+/*Info. html*/
+
+.main {
+   
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.main_logo {
+    width: 20vw;
+    min-height: 20vh;
+    
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+.bonzai_logo {
+    width: 20vw;
+}
+
+.about {
+    display: flex;
+    margin-bottom: 5%;
+    
+    
+    
+    
+    
+    
+}
+
+.card_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 42vw;
+    height: 54vh;
+    padding: 2rem;
+    background-color: #121415;
+    overflow: hidden;
+}
+
+.card_text {
+    
+    font-size: 1rem;
+    line-height: 150%;
+    
+}
+
+.about_button {
+    align-self: flex-end;
+   
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 10vw;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    max-height: 15vh;
+    margin-top: 8%;
+
+    
+    
+
+}
+
+.card_one_img {
+    min-width: 45vw;
+    min-height: 54vh;
+    background-color: white;
+    background-image: url(/img/05-night.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_middle {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.card_two_img {
+    
+    min-width: 42vw;
+    min-height: 55vh;
+    background-color: white;
+    background-image: url(/img/09-night.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45vw;
+    height: 55vh;
+    padding: 2rem;
+    background-color: #121415;
+    overflow: hidden;
+}
+
+.box {
+   
+    grid-area: box;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 10%;
+    
+    gap: 0.5%;
+}
+
+.box__content {
+    display: flex;
+
+    justify-content: center;
+    height: 20rem;
+    width: 30rem;
+    background-color: #fff;
+    position: relative;
+    
+}
+
+   
+    
+
+
+
+.box_img_one {
+    
+    background-image: url(/img/03-night.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.box_img_two {
+    background-color: #121415;
+    background-image: url(/img/04-night.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+    background-position-y: 10%;
+    
+
+}
+
+.box_img_three {
+    background-image: url(/img/07-night.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.box_img_four {
+    background-image: url(/img/06-night.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box_img_five {
+    background-image: url(/img/05-night.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box_img_six {
+    background-image: url(/img/02-night.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*Booking*/
+
+.main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.date_month_day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100rem;
+    padding: 6rem;
+    background-color: #090605;
+
+}
+
+
+.date {
+    padding: 0.5em;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 2rem;
+    border: 3px solid black;
+}
+
+.search {
+    align-self: flex-end;
+}
+
+.search_button {
+    background-color: white;
+    padding: 0.5em;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: 5px solid black;
+    margin-left: 0;
+    
+}
+
+.search_button h2 {
+    font-size: 1rem;
+    color: #090605;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.room_booking {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.room {
+   
+    max-width: 80vw;
+    height: auto;
+    background-color: #121415;
+    margin: 2em;
+    overflow: hidden;
+    
+}
+
+.roomimg {
+    max-width: 45%;
+    height: auto;
+    border: 2px solid gray;
+}
+
+.room_text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.button_booking {
+    align-self: flex-end;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    width: 10rem;
+    height: 3rem;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10%;
+    
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    
+   
+}
+
+.room_one, .room_two, .room_three, .room_four {
+    display: flex;
+    
+    
+    
+  }
+
+
+@media screen 
+and (min-width: 375px)
+and (max-width: 768px)  {
+    
+    h2 {
+        font-size: 1rem;
+    }
+    .navigation {
+        padding: 1.5rem;
+        flex-direction: column;
+        height: 15rem;
+    }
+
+    .navigation_menu {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    .navigation_item {
+        border-bottom: 1px solid white;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        
+        
+    }
+
+    .nav_logo {
+        width: 6rem;
+    }
+
+    .main_backgroundimg {
+        width: auto;
+        height: auto;
+        background-image: url(/img/09-night.jpg);
+        background-position-x: 60%;
+        
+    }
+
+    .card {
+        width: 100vw;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .hotel_text {
+        font-size: 13vw;
+        text-align: center;
+        letter-spacing: 1.2rem;
+        margin: 0;
+        margin-top: 10%;
+        padding: 0.5rem;
+    }
+
+    .hotel_botton {
+        align-self: flex-start;
+        margin: 0;
+        margin-top: 3%;
+        margin-left: 15%;
+        max-width: 40vw;
+        height: 3rem;
+        
+    }
+
+    .main_logo {
+        width: 53vw;
+        min-height: 10vh;
+    }
+
+    .bonzai_logo {
+        width: 50vw;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about_button {
+        width: 74vw;
+        font-size: 2vw;
+        height: 4rem;
+        padding: 5%;
+    }
+
+    .card_one {
+        max-width: 90vw;
+        height: 42rem;
+    }
+
+    .card_text {
+        font-size: 1rem;
+        line-height: 156%;
+       
+
+    }
+
+    .card_one_img {
+        width: 90vw;
+        height: 28vh;
+        background-position-x: 58%;
+    }
+
+    .about_middle {
+        flex-direction: column;
+    }
+
+    .card_two {
+        padding: 2rem;
+        width: 90vw;
+        height: 42rem;
+    }
+
+    .card_two_img {
+        width: 90vw;
+        height: 28vh;
+        background-position-x: 44%;
+    }
+
+    .box {
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.5%;
+    }
+
+    .box__content {
+        width: 90vw;
+        height: 26vh;
+    }
+
+
+    .date_month_day {
+        flex-direction: column;
+    }
+
+    .room {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .roomimg {
+        max-width: 100%;
+    }
+
+    .button_booking {
+        align-self: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-self: flex-start;
+        padding: 20%;
+    }
+
+    .footer_icons {
+        flex-direction: column;
+        margin: 0;
+        align-self: flex-start;
+        padding: 5%;
+    }
+}
+
+@media screen 
+and (min-width: 769px)
+and (max-width: 1500px) {
+
+    .hotel_content, .hotel_botton {
+        align-self: baseline;
+        
+        
+    }
+    
+    .hotel_text {
+        font-size: 4rem;
+        letter-spacing: 4rem;
+        margin-left: auto;
+       
+    }
+
+   
+        
+        
+    
+}
